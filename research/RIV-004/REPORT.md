@@ -19,3 +19,6 @@ git -C /tmp/riv004-verieffect checkout --detach bfb6af94984ddda87133bd76bbcce2b2
 python experiment.py --oap /tmp/riv004-oap --verieffect /tmp/riv004-verieffect > comparison.json
 ```
 Use fresh trusted checkouts, review code first, no credentials or network access during verdict execution. The harness checks clean Git trees, commit identity and relevant source blobs. Local environment DNS blocked GitHub clone; no actual competitor results claimed. Next: execute the full harness, preserve all rows, compare hypotheses and publish evidence. Do not substitute fixture metrics for actual product evaluation. No aggregate competitive score yet.
+
+## Remote execution checkpoint
+A read-only public GitHub Actions reproduction workflow was proposed in [PR #1](https://github.com/splucasaugusto666/splucasaugusto666/pull/1), head a724595b4dd6f979cbe5508d96448c08587cf567. At the first check no PR workflow run was returned. Do not report a run or merge as successful before verifying the actual job logs and recorded comparison. Next iteration: check PR run metadata, diagnose any failure, record actual per-case outputs and limitations.
