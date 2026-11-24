@@ -19,3 +19,7 @@ I develop open-source research prototypes and reproducible experiments on the re
 - Disclose material AI assistance in research artifacts and review all claims before external submission.
 
 This is an independent portfolio, not an institutional affiliation or a claim of peer-reviewed publications. External review and reproducible bug reports are welcome through each project's issue tracker.
+
+## Research log
+
+- [RIV-001 — Correlated evidence and verifier abstention](research/RIV-001/REPORT.md): exploratory exhaustive 16-state model with pre-execution protocol, baselines, raw results and negative controls. Not a peer-reviewed paper or a deployed-agent benchmark. Owner review pending.
