@@ -1,0 +1,960 @@
+{
+  "controls": [
+    {
+      "case": "empty_string",
+      "committed": 0,
+      "unchanged": true,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "wrong_arity",
+      "committed": 0,
+      "unchanged": true,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "unknown_resource",
+      "committed": 0,
+      "unchanged": true,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "bool_value",
+      "committed": 0,
+      "unchanged": true,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "rollback",
+      "committed": 0,
+      "unchanged": true,
+      "verdict": "ABSTAIN"
+    },
+    {
+      "broker_verdict": "ACCEPT",
+      "case": "bypass_outside",
+      "full_state_matches": false,
+      "scope_matches": true,
+      "unmediated_commits": 1
+    },
+    {
+      "broker_verdict": "ACCEPT",
+      "case": "bypass_reset",
+      "full_state_matches": true,
+      "scope_matches": true,
+      "unmediated_commits": 3
+    }
+  ],
+  "hypotheses": {
+    "H1": true,
+    "H2": true,
+    "H3": true,
+    "H4": true,
+    "H5": true
+  },
+  "metrics": {
+    "baseline": {
+      "abstentions": 0,
+      "invalid_accepted": 3,
+      "invalid_with_commits": 8,
+      "valid_accepted": 2
+    },
+    "broker": {
+      "abstentions": 0,
+      "invalid_accepted": 0,
+      "invalid_with_commits": 0,
+      "valid_accepted": 2
+    }
+  },
+  "python": "3.13.5",
+  "rows": [
+    {
+      "case": "clean",
+      "committed": 1,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": true,
+      "verdict": "ACCEPT"
+    },
+    {
+      "case": "clean",
+      "committed": 1,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": true,
+      "verdict": "ACCEPT"
+    },
+    {
+      "case": "lost_ack",
+      "committed": 1,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": true,
+      "verdict": "ACCEPT"
+    },
+    {
+      "case": "lost_ack",
+      "committed": 1,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": true,
+      "verdict": "ACCEPT"
+    },
+    {
+      "case": "no_effect",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "no_effect",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "wrong_value",
+      "committed": 1,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "wrong"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "wrong_value",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "collateral_persistent",
+      "committed": 2,
+      "final": [
+        [
+          [
+            "neighbor",
+            1,
+            "dirty"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "collateral_persistent",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "collateral_restored",
+      "committed": 3,
+      "final": [
+        [
+          [
+            "neighbor",
+            2,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "collateral_restored",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "duplicate",
+      "committed": 2,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            2,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "duplicate",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "transient_wrong",
+      "committed": 2,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            2,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "transient_wrong",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "collateral_reset",
+      "committed": 4,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "ACCEPT"
+    },
+    {
+      "case": "collateral_reset",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "duplicate_reset",
+      "committed": 3,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "ACCEPT"
+    },
+    {
+      "case": "duplicate_reset",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "precondition_mismatch",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "dirty"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "dirty"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "precondition_mismatch",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "dirty"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "dirty"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    },
+    {
+      "case": "outside_scope",
+      "committed": 2,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            1,
+            "new"
+          ]
+        ],
+        "changed"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "baseline",
+      "truth": false,
+      "verdict": "ACCEPT"
+    },
+    {
+      "case": "outside_scope",
+      "committed": 0,
+      "final": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "initial": [
+        [
+          [
+            "neighbor",
+            0,
+            "clean"
+          ],
+          [
+            "target",
+            0,
+            "old"
+          ]
+        ],
+        "clean"
+      ],
+      "method": "broker",
+      "truth": false,
+      "verdict": "REJECT"
+    }
+  ]
+}
