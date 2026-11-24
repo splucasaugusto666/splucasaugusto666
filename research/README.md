@@ -19,6 +19,7 @@ Expected: PASS, 1,392 recorded rows, 40 metric groups, 8,992 assertions and thre
 | RIV-001 | Correlated observer evidence | [Protocol](RIV-001/protocol.md) | [JS](RIV-001/experiment.js) | [JSON](RIV-001/results.json) | [Report](RIV-001/REPORT.md) |
 | RIV-002 | Target state vs exact-write history | [Protocol](RIV-002/protocol.md) | [Python](RIV-002/experiment.py) | [JSON](RIV-002/results.json) | [Report](RIV-002/REPORT.md) |
 | RIV-003 | Observability under evidence failures | [Protocol](RIV-003/protocol.md) | [JS](RIV-003/experiment.js) | [JSON](RIV-003/results.json) | [Report](RIV-003/REPORT.md) |
+| RIV-004 | Matched SQLite verifier comparison (fixture validation only; product results pending) | [Protocol](RIV-004/protocol.md) | [Python](RIV-004/experiment.py) | Pending | [Checkpoint](RIV-004/REPORT.md) |
 
 RIV-001 and RIV-003 are finite synthetic models; RIV-002 evaluates a pinned real file verifier using controlled local writes. These are not comparable samples and must not be pooled into a performance estimate.
 
