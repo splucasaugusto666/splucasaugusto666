@@ -10,6 +10,11 @@ I develop open-source research prototypes and reproducible experiments on the re
 | [SkillParity](https://github.com/splucasaugusto666/skillparity) | How can file-level drift across agent skill catalogs be detected reproducibly? | Released CLI; file parity is not semantic equivalence |
 | [Fitness Programming Toolkit](https://github.com/splucasaugusto666/fitness-programming-toolkit) | How can structured domain data be validated and exported deterministically in AI-assisted workflows? | Alpha; structural validation, not clinical or exercise advice |
 
+
+**Start here:** [Research artifact index and one-command results audit](research/README.md) · [Global adoption and authority scorecard](research/ADOPTION.md).
+
+The research investigates AI agent reliability, outcome verification, evidence integrity, and cross-agent interoperability. Each study exposes its protocol, executable code, recorded data, limitations and reproduction instructions. The aggregate audit checks published metrics from raw records; it is not an independent replication or a ranking of deployed AI systems.
+
 ## Research practice
 
 - State falsifiable hypotheses and explicit trust assumptions.
