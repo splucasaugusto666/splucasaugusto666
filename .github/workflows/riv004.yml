@@ -1,0 +1,43 @@
+name: RIV-004 pinned verifier comparison
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/riv004.yml'
+      - 'research/RIV-004/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Fetch exact public source revisions
+        shell: bash
+        run: |
+          set -euo pipefail
+          for name in oap verieffect; do
+            if [ "$name" = oap ]; then
+              url=https://github.com/splucasaugusto666/OpenActionProof.git
+              rev=b535850af64a460f96edfbcf56fa40df0d5ff974
+            else
+              url=https://github.com/bfeng1122/verieffect.git
+              rev=bfb6af94984ddda87133bd76bbcce2b28d10f485
+            fi
+            dst="$RUNNER_TEMP/riv004-$name"
+            git init "$dst"
+            git -C "$dst" fetch --depth=1 "$url" "$rev"
+            git -C "$dst" checkout --detach FETCH_HEAD
+            test "$(git -C "$dst" rev-parse HEAD)" = "$rev"
+          done
+      - name: Run isolated synthetic comparison
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 research/RIV-004/experiment.py --fixtures-only > "$RUNNER_TEMP/fixtures.json"
+          python3 research/RIV-004/experiment.py --oap "$RUNNER_TEMP/riv004-oap" --verieffect "$RUNNER_TEMP/riv004-verieffect" > "$RUNNER_TEMP/comparison.json"
+          cat "$RUNNER_TEMP/comparison.json"
+          sha256sum "$RUNNER_TEMP/comparison.json"
