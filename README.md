@@ -38,3 +38,5 @@ This is an independent portfolio, not an institutional affiliation or a claim of
 - [APEX competitive evaluation charter](research/APEX.md): reference landscape, fixed proposed 100-point rubric, and gates for comparable verifier evaluations.
 
 - [RIV-004 — Matched SQLite verifier comparison](research/RIV-004/REPORT.md): actual pinned OpenActionProof and Verieffect implementations evaluated in CI; matched exact-state configurations tie (3/10 false accepts). Raw observations, reproduction commands and limitations published.
+
+- [RIV-005 — Restricting effects versus verifying outcomes](research/RIV-005/REPORT.md): complete-plan SQLite broker prototype, 24 primary evaluations and seven controls; zero false accepts in the mediated fixture, with explicit bypass counterexamples.
