@@ -1,0 +1,321 @@
+{
+  "blob": "f259b111ff5a2fd5a6102451c3adefd6058a8b54",
+  "cases": 12,
+  "commit": "df7b22bbb81c8b1a102bc6fef1506c3d4f9704cc",
+  "hypotheses": {
+    "H1": true,
+    "H2": true,
+    "H3": true,
+    "H4": true
+  },
+  "metrics": {
+    "claim_only": {
+      "acceptance": 0.8333333333333334,
+      "false_acceptance": 0.8888888888888888,
+      "fn": 1,
+      "fp": 8,
+      "tn": 1,
+      "tp": 2
+    },
+    "oap": {
+      "acceptance": 0.5833333333333334,
+      "false_acceptance": 0.5555555555555556,
+      "fn": 1,
+      "fp": 5,
+      "tn": 4,
+      "tp": 2
+    },
+    "target_only": {
+      "acceptance": 0.75,
+      "false_acceptance": 0.6666666666666666,
+      "fn": 0,
+      "fp": 6,
+      "tn": 3,
+      "tp": 3
+    },
+    "whole_snapshot": {
+      "acceptance": 0.5,
+      "false_acceptance": 0.3333333333333333,
+      "fn": 0,
+      "fp": 3,
+      "tn": 6,
+      "tp": 3
+    }
+  },
+  "python": "3.13.5",
+  "rows": [
+    {
+      "case": "clean",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "oap": true,
+      "target_only": true,
+      "timeout": false,
+      "truth": true,
+      "verdict": "CONFIRMED",
+      "whole_snapshot": true
+    },
+    {
+      "case": "false_claim",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "old"
+      },
+      "initial": "old",
+      "journal": [],
+      "oap": false,
+      "target_only": false,
+      "timeout": false,
+      "truth": false,
+      "verdict": "FALSE_SUCCESS",
+      "whole_snapshot": false
+    },
+    {
+      "case": "wrong_target",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "wrong"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ]
+      ],
+      "oap": false,
+      "target_only": false,
+      "timeout": false,
+      "truth": false,
+      "verdict": "FALSE_SUCCESS",
+      "whole_snapshot": false
+    },
+    {
+      "case": "preexisting",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "new"
+      },
+      "initial": "new",
+      "journal": [],
+      "oap": false,
+      "target_only": true,
+      "timeout": false,
+      "truth": false,
+      "verdict": "STATE_SATISFIED_UNATTRIBUTED",
+      "whole_snapshot": false
+    },
+    {
+      "case": "lost_ack_after_write",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "oap": false,
+      "target_only": true,
+      "timeout": true,
+      "truth": true,
+      "verdict": "INDETERMINATE",
+      "whole_snapshot": true
+    },
+    {
+      "case": "no_effect_exception",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "old"
+      },
+      "initial": "old",
+      "journal": [],
+      "oap": false,
+      "target_only": false,
+      "timeout": true,
+      "truth": false,
+      "verdict": "INDETERMINATE",
+      "whole_snapshot": false
+    },
+    {
+      "case": "collateral_persistent",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "dirty",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ]
+      ],
+      "oap": true,
+      "target_only": true,
+      "timeout": false,
+      "truth": false,
+      "verdict": "CONFIRMED",
+      "whole_snapshot": false
+    },
+    {
+      "case": "collateral_restored",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ],
+        [
+          "neighbor",
+          "clean"
+        ]
+      ],
+      "oap": true,
+      "target_only": true,
+      "timeout": false,
+      "truth": false,
+      "verdict": "CONFIRMED",
+      "whole_snapshot": true
+    },
+    {
+      "case": "target_repeated",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "oap": true,
+      "target_only": true,
+      "timeout": false,
+      "truth": false,
+      "verdict": "CONFIRMED",
+      "whole_snapshot": true
+    },
+    {
+      "case": "target_transient_wrong",
+      "claim": true,
+      "claim_only": true,
+      "final": {
+        "neighbor": "clean",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "oap": true,
+      "target_only": true,
+      "timeout": false,
+      "truth": false,
+      "verdict": "CONFIRMED",
+      "whole_snapshot": true
+    },
+    {
+      "case": "clean_false_claim",
+      "claim": false,
+      "claim_only": false,
+      "final": {
+        "neighbor": "clean",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "oap": true,
+      "target_only": true,
+      "timeout": false,
+      "truth": true,
+      "verdict": "CONFIRMED",
+      "whole_snapshot": true
+    },
+    {
+      "case": "collateral_false_claim",
+      "claim": false,
+      "claim_only": false,
+      "final": {
+        "neighbor": "dirty",
+        "target": "new"
+      },
+      "initial": "old",
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ]
+      ],
+      "oap": true,
+      "target_only": true,
+      "timeout": false,
+      "truth": false,
+      "verdict": "CONFIRMED",
+      "whole_snapshot": false
+    }
+  ]
+}
