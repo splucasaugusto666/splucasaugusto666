@@ -25,3 +25,5 @@ This is an independent portfolio, not an institutional affiliation or a claim of
 - [RIV-001 — Correlated evidence and verifier abstention](research/RIV-001/REPORT.md): exploratory exhaustive 16-state model with pre-execution protocol, baselines, raw results and negative controls. Not a peer-reviewed paper or a deployed-agent benchmark. Owner review pending.
 
 - [Research opportunities and publication readiness](research/OPPORTUNITIES.md): dated routes, contribution constraints and next research gates.
+
+- [RIV-002 — Outcome verification under collateral and transient effects](research/RIV-002/REPORT.md): actual pinned OpenActionProof file verifier, 12 controlled filesystem scenarios, three baselines, reproducible results and negative findings. Not an evaluation of later scoped modules or live agents.
