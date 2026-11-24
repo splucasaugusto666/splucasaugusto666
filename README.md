@@ -27,3 +27,7 @@ This is an independent portfolio, not an institutional affiliation or a claim of
 - [Research opportunities and publication readiness](research/OPPORTUNITIES.md): dated routes, contribution constraints and next research gates.
 
 - [RIV-002 — Outcome verification under collateral and transient effects](research/RIV-002/REPORT.md): actual pinned OpenActionProof file verifier, 12 controlled filesystem scenarios, three baselines, reproducible results and negative findings. Not an evaluation of later scoped modules or live agents.
+
+- [RIV-003 — Evidence granularity and observability limits](research/RIV-003/REPORT.md): 341 histories across four trust regimes, executable model and negative controls; no external product ranking.
+
+- [APEX competitive evaluation charter](research/APEX.md): reference landscape, fixed proposed 100-point rubric, and gates for comparable verifier evaluations.
