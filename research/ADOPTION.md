@@ -26,3 +26,18 @@ Hypothesis: a single index and automated audit reduce the effort needed to locat
 
 ## Next
 Recruit voluntary independent replication only after explicit authorization for external outreach; prepare a reproducibility template and a reviewed versioned archive/citation file; confirm licensing and owner authorship before deposit. Measure comparable external adoption from authorized public sources, and pursue RIV-004 actual scoped/external verifier evaluation. No paid services, fake engagement, spam or external submissions.
+
+## APEX Infinity — prospective scorecard v2 (not retroactive)
+
+Effective for future formal cycles only; preserve the v1 rubric above and technical APEX rubric. No earlier rankings recalculated.
+
+| Axis | Weight | Required evidence |
+| --- | ---: | --- |
+| Technology | 30 | Matched functionality, performance, reliability, scalability tests |
+| Security and quality | 15 | Scoped adversarial and regression controls, documented trust boundaries |
+| Innovation | 15 | Demonstrable user benefit over relevant prior art, original contribution review |
+| Experience and adoption | 15 | Independent setup/first-use success, integrations and verified retention |
+| Recognition and distribution | 15 | Dated authentic visibility, downloads, external references |
+| Authority and sustainability | 10 | Independent replication, contributors, maintenance and governance |
+
+Freeze measurement anchors, denominators, cohorts and windows before comparison. Unknown = NA; no aggregate when incomplete. Track current value, peer value, dated source, confidence, gap and action. RIV-004 is a tie on matched SQLite decisions (3/10 invalid accepted per exact configuration); RIV-005 reduces invalid acceptance to 0/10 under a different intervention (complete trusted mediation), NOT a new head-to-head product victory. External adoption remains unmeasured. Prioritize privilege separation and independent test authorship. Improve the research workflow after each iteration by identifying the highest-value action, wasted effort, negative result, regression guard and next executable step. No fake recognition, external submissions or spending.
