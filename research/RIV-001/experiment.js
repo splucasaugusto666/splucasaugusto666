@@ -17,6 +17,6 @@ function run(){
  assert(strata.complete_primary.every(r=>r.decisions.domains===r.decisions.unanimity),"H4");
  assert(metrics.primary.abstain.coverage===0&&metrics.primary.abstain.selective_error===null,"negative control");
  assert(strata.primary.filter(r=>!r.faultA&&!r.faultB&&r.availableB).every(r=>r.decisions.domains===r.truth),"clean control");
- return {experiment:"RIV-001",version:1,metrics,rows,assertions:"6 passed"};
+ return {experiment:"RIV-001",version:1,metrics,rows,assertions:"7 passed"};
 }
 console.log(JSON.stringify(run(), null, 2));
