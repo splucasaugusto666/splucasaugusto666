@@ -36,3 +36,5 @@ This is an independent portfolio, not an institutional affiliation or a claim of
 - [RIV-003 — Evidence granularity and observability limits](research/RIV-003/REPORT.md): 341 histories across four trust regimes, executable model and negative controls; no external product ranking.
 
 - [APEX competitive evaluation charter](research/APEX.md): reference landscape, fixed proposed 100-point rubric, and gates for comparable verifier evaluations.
+
+- [RIV-004 — Matched SQLite verifier comparison](research/RIV-004/REPORT.md): actual pinned OpenActionProof and Verieffect implementations evaluated in CI; matched exact-state configurations tie (3/10 false accepts). Raw observations, reproduction commands and limitations published.
