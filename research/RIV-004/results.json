@@ -1,0 +1,1553 @@
+{
+  "metrics": {
+    "oap_scope": {
+      "an": 0,
+      "ap": 0,
+      "coverage": 1.0,
+      "false_acceptance": 0.3,
+      "fn": 0,
+      "fp": 3,
+      "tn": 7,
+      "tp": 2,
+      "valid_acceptance": 1.0
+    },
+    "verieffect_exact": {
+      "an": 0,
+      "ap": 0,
+      "coverage": 1.0,
+      "false_acceptance": 0.3,
+      "fn": 0,
+      "fp": 3,
+      "tn": 7,
+      "tp": 2,
+      "valid_acceptance": 1.0
+    },
+    "verieffect_target": {
+      "an": 0,
+      "ap": 0,
+      "coverage": 1.0,
+      "false_acceptance": 0.8,
+      "fn": 0,
+      "fp": 8,
+      "tn": 2,
+      "tp": 2,
+      "valid_acceptance": 1.0
+    }
+  },
+  "mode": "actual_implementations",
+  "oap_commit": "b535850af64a460f96edfbcf56fa40df0d5ff974",
+  "rows": [
+    {
+      "actor_status": "RETURNED",
+      "case": "clean",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": true,
+      "verdict": "STATE_MATCHED_UNATTRIBUTED"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "clean",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": true,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "clean",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": true,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RAISED",
+      "case": "lost_ack",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": true,
+      "verdict": "STATE_MATCHED_UNATTRIBUTED"
+    },
+    {
+      "actor_status": "RAISED",
+      "case": "lost_ack",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": true,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RAISED",
+      "case": "lost_ack",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": true,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "no_effect",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MISMATCH"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "no_effect",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "no_effect",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "wrong_value",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "wrong"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MISMATCH"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "wrong_value",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "wrong"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "wrong_value",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "wrong"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_persistent",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          1,
+          "dirty"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MISMATCH"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_persistent",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          1,
+          "dirty"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_persistent",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          1,
+          "dirty"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_restored",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          2,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ],
+        [
+          "neighbor",
+          "clean"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MISMATCH"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_restored",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          2,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ],
+        [
+          "neighbor",
+          "clean"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_restored",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          2,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ],
+        [
+          "neighbor",
+          "clean"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "duplicate",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          2,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MISMATCH"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "duplicate",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          2,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "duplicate",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          2,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "transient_wrong",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          2,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MISMATCH"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "transient_wrong",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          2,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "transient_wrong",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          2,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "wrong"
+        ],
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_reset",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ],
+        [
+          "neighbor",
+          "clean"
+        ],
+        [
+          "reset",
+          "neighbor"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MATCHED_UNATTRIBUTED"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_reset",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ],
+        [
+          "neighbor",
+          "clean"
+        ],
+        [
+          "reset",
+          "neighbor"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "collateral_reset",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "neighbor",
+          "dirty"
+        ],
+        [
+          "neighbor",
+          "clean"
+        ],
+        [
+          "reset",
+          "neighbor"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "duplicate_reset",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "target",
+          "new"
+        ],
+        [
+          "reset",
+          "target"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "STATE_MATCHED_UNATTRIBUTED"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "duplicate_reset",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "target",
+          "new"
+        ],
+        [
+          "reset",
+          "target"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "duplicate_reset",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "target",
+          "new"
+        ],
+        [
+          "reset",
+          "target"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "NOT_INVOKED",
+      "case": "precondition_mismatch",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "dirty"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "dirty"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [],
+      "method": "oap_scope",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PRECONDITION_MISMATCH"
+    },
+    {
+      "actor_status": "NOT_INVOKED",
+      "case": "precondition_mismatch",
+      "decision": false,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "dirty"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "dirty"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [],
+      "method": "verieffect_exact",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "FAIL"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "precondition_mismatch",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "dirty"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "dirty"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "clean",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "outside_scope",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "other",
+          "changed"
+        ]
+      ],
+      "method": "oap_scope",
+      "outside": "changed",
+      "truth": false,
+      "verdict": "STATE_MATCHED_UNATTRIBUTED"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "outside_scope",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "other",
+          "changed"
+        ]
+      ],
+      "method": "verieffect_exact",
+      "outside": "changed",
+      "truth": false,
+      "verdict": "PASS"
+    },
+    {
+      "actor_status": "RETURNED",
+      "case": "outside_scope",
+      "decision": true,
+      "final": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          1,
+          "new"
+        ]
+      ],
+      "initial": [
+        [
+          "neighbor",
+          0,
+          "clean"
+        ],
+        [
+          "target",
+          0,
+          "old"
+        ]
+      ],
+      "journal": [
+        [
+          "target",
+          "new"
+        ],
+        [
+          "other",
+          "changed"
+        ]
+      ],
+      "method": "verieffect_target",
+      "outside": "changed",
+      "truth": false,
+      "verdict": "PASS"
+    }
+  ],
+  "verieffect_commit": "bfb6af94984ddda87133bd76bbcce2b28d10f485"
+}
