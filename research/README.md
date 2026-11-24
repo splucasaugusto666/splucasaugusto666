@@ -20,6 +20,7 @@ Expected: PASS, 1,392 recorded rows, 40 metric groups, 8,992 assertions and thre
 | RIV-002 | Target state vs exact-write history | [Protocol](RIV-002/protocol.md) | [Python](RIV-002/experiment.py) | [JSON](RIV-002/results.json) | [Report](RIV-002/REPORT.md) |
 | RIV-003 | Observability under evidence failures | [Protocol](RIV-003/protocol.md) | [JS](RIV-003/experiment.js) | [JSON](RIV-003/results.json) | [Report](RIV-003/REPORT.md) |
 | RIV-004 | Matched SQLite verifier comparison (actual pinned implementations) | [Protocol](RIV-004/protocol.md) | [Python](RIV-004/experiment.py) | [JSON](RIV-004/results.json) | [Report](RIV-004/REPORT.md) |
+| RIV-005 | Complete-plan transaction mediation vs post-hoc checks | [Protocol](RIV-005/protocol.md) | [Python](RIV-005/experiment.py) | [JSON](RIV-005/results.json) | [Report](RIV-005/REPORT.md) |
 
 The first audit covers RIV-001–003. For the actual head-to-head RIV-004 comparison, run `node research/RIV-004/audit.js` (expected PASS, 36 rows, 3 metric groups, 140 checks and 3 corruption controls rejected; audit function validated in a JavaScript runtime, Node wrapper not separately executed). Together these cover 1,428 recorded rows and 43 metric groups, not independent samples.
 
